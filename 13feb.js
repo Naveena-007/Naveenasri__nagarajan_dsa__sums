@@ -57,19 +57,19 @@ int x[] = [11, 13, 4, 17];
 // 17 is NOT found
 */
 
-// const a = [13, 11, 13, 4, 10, 9, 1];
-// const x = [11, 13, 4, 17];
+const k = [13, 11, 13, 4, 10, 9, 1];
+const x = [11, 13, 4, 17];
 
-// for (let i = 0; i < x.length; i++) {
-//   let count = 0;
-//   for (let j = 0; j < a.length; j++) {
-//     if (x[i] === a[j]) {
-//       count++;
-//     }
-//   }
-//   if (count === 0) {
-//     console.log(`${x[i]} is not found`);
-//   } else {
-//     console.log(`${x[i]} is found ${count} time(s)`);
-//   }
-// }
+for (let i = 0; i < x.length; i++) {
+  let count = 0;
+  for (let j = 0; j < k.length; j++) {
+    if (x[i] === a[j]) {
+      count++;
+    }
+  }
+  if (count === 0) {
+    console.log(`${x[i]} is not found`);
+  } else {
+    console.log(`${x[i]} is found ${count} time(s)`);
+  }
+}
